@@ -89,58 +89,63 @@
 		if( !empty($footer_class) ) {
 			
 			/* COMPANY ADDRESS */
-			echo '<div class="'.$footer_class.' company-details">';
-				
-				if( !empty($zerif_address_icon) ) { 
-					echo '<div class="icon-top red-text">';
-						 echo '<img src="'.esc_url($zerif_address_icon).'" alt="" />';
-					echo '</div>';
-				}
-				
-				if( !empty($zerif_address) ) {
-					echo '<div class="zerif-footer-address">';
-						echo wp_kses_post( $zerif_address );
-					echo '</div>';
-				} else if( isset( $wp_customize ) ) {
-					echo '<div class="zerif-footer-address zerif_hidden_if_not_customizer"></div>';
-				}
-				
-			echo '</div>';
+			if( !empty($zerif_address_icon) || !empty($zerif_address) ) { 
+				echo '<div class="'.$footer_class.' company-details">';
+					
+					if( !empty($zerif_address_icon) ) { 
+						echo '<div class="icon-top red-text">';
+							 echo '<img src="'.esc_url($zerif_address_icon).'" alt="" />';
+						echo '</div>';
+					}
+					
+					if( !empty($zerif_address) ) {
+						echo '<div class="zerif-footer-address">';
+							echo wp_kses_post( $zerif_address );
+						echo '</div>';
+					} else if( isset( $wp_customize ) ) {
+						echo '<div class="zerif-footer-address zerif_hidden_if_not_customizer"></div>';
+					}
+					
+				echo '</div>';
+			}
 			
 			/* COMPANY EMAIL */
-			echo '<div class="'.$footer_class.' company-details">';
-			
-				if( !empty($zerif_email_icon) ) {
-					echo '<div class="icon-top green-text">';
-						echo '<img src="'.esc_url($zerif_email_icon).'" alt="" />';
-					echo '</div>';
-				}
-				if( !empty($zerif_email) ) {
-					echo '<div class="zerif-footer-email">';	
-						echo wp_kses_post( $zerif_email );
-					echo '</div>';
-				} else if( isset( $wp_customize ) ) {
-					echo '<div class="zerif-footer-email zerif_hidden_if_not_customizer"></div>';
-				}	
-			
-			echo '</div>';
+			if( !empty($zerif_email_icon) || !empty($zerif_email) ) {
+				echo '<div class="'.$footer_class.' company-details">';
+				
+					if( !empty($zerif_email_icon) ) {
+						echo '<div class="icon-top green-text">';
+							echo '<img src="'.esc_url($zerif_email_icon).'" alt="" />';
+						echo '</div>';
+					}
+					if( !empty($zerif_email) ) {
+						echo '<div class="zerif-footer-email">';	
+							echo wp_kses_post( $zerif_email );
+						echo '</div>';
+					} else if( isset( $wp_customize ) ) {
+						echo '<div class="zerif-footer-email zerif_hidden_if_not_customizer"></div>';
+					}	
+				
+				echo '</div>';
+			}
 			
 			/* COMPANY PHONE NUMBER */
-			echo '<div class="'.$footer_class.' company-details">';
-				if( !empty($zerif_phone_icon) ) {
-					echo '<div class="icon-top blue-text">';
-						echo '<img src="'.esc_url($zerif_phone_icon).'" alt="" />';
-					echo '</div>';
-				}
-				if( !empty($zerif_phone) ) {
-					echo '<div class="zerif-footer-phone">';
-						echo wp_kses_post( $zerif_phone );
-					echo '</div>';	
-				} else if( isset( $wp_customize ) ) {
-					echo '<div class="zerif-footer-phone zerif_hidden_if_not_customizer"></div>';
-				}		
-			echo '</div>';
-			
+			if( !empty($zerif_phone_icon) || !empty($zerif_phone) ) {
+				echo '<div class="'.$footer_class.' company-details">';
+					if( !empty($zerif_phone_icon) ) {
+						echo '<div class="icon-top blue-text">';
+							echo '<img src="'.esc_url($zerif_phone_icon).'" alt="" />';
+						echo '</div>';
+					}
+					if( !empty($zerif_phone) ) {
+						echo '<div class="zerif-footer-phone">';
+							echo wp_kses_post( $zerif_phone );
+						echo '</div>';	
+					} else if( isset( $wp_customize ) ) {
+						echo '<div class="zerif-footer-phone zerif_hidden_if_not_customizer"></div>';
+					}		
+				echo '</div>';
+			}
 		}
 		
 		// open link in a new tab when checkbox "accessibility" is not ticked
@@ -186,7 +191,7 @@
 						echo '<p id="zerif-copyright" class="zerif_hidden_if_not_customizer"></p>';
 					endif;
 					
-					echo '<div class="zerif-copyright-box"></div>';
+					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/zerif-lite/"'.$attribut_new_tab.' rel="nofollow">Zerif Lite </a>'.__('powered by','zerif-lite').'<a class="zerif-copyright" href="http://wordpress.org/"'.$attribut_new_tab.' rel="nofollow"> WordPress</a></div>';
 					
 					echo '</div>';
 			
