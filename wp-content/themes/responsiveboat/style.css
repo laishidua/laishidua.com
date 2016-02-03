@@ -18,12 +18,12 @@ General
 --------------------------------------------------------------*/
 .green-btn, .red-btn {
 	background: rgba(255, 255, 255, 0.15);
-	border: 1px solid #FFDD00 !important;
+	border: 1px solid #F45A0E !important;
 }
 
 .green-btn:hover, .red-btn:hover {
-	background: #FFDD00;
-    border: 1px solid #FFDD00 !important;
+	background: #F45A0E;
+    border: 1px solid #F45A0E !important;
     color: #303030 !important;
 }
 
@@ -45,7 +45,7 @@ General
     display: block;
     height: 3px;
     width: 40px;
-    background: #FD0;
+    background: #F45A0E;
     margin: 8px 0 20px 0;
     margin-left: auto;
     margin-right: auto;
@@ -77,7 +77,7 @@ Header
 	background: rgba(0,0,0,0.8);
 }
 ul.nav > li.current_page_item > a:before {
-	 background:#FD0;
+	 background:#F45A0E;
 }
 .navbar-inverse .navbar-nav > li > a {
     font-size: 12px;
@@ -86,15 +86,15 @@ ul.nav > li.current_page_item > a:before {
     color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #fd0 !important;
+    color: #F45A0E !important;
 }
 .rb-site-title {
-    color: #FFDD00;
+    color: #F45A0E;
     font-size: 20px;
     line-height: 20px;
 }
 .rb-site-description {
-    color: #FFDD00;
+    color: #F45A0E;
     font-size: 15px;
     line-height: 10px;
 }
@@ -105,7 +105,7 @@ ul.nav > li.current_page_item > a:before {
 	padding: 10% 0px 290px;
 }
 .navbar-toggle.active {
-    background-color: #FD0 !important;
+    background-color: #F45A0E !important;
 }
 .navbar-inverse .navbar-toggle.active .icon-bar {
     background-color: #000 !important;
@@ -146,7 +146,7 @@ Content
 }
 
 .testimonial {
-    background: rgba(255, 221, 0, 0.7) none repeat scroll 0% 0% !important;
+    background: rgba(150, 95, 0, 0.7) none repeat scroll 0% 0% !important;
 }
 
 .contact-us {
@@ -160,12 +160,12 @@ Content
 }
 
 .team-member h5:before {
-    background: #FD0 !important;
+    background: #F45A0E !important;
 }
 
 .team-member:hover .details {
     top: 0px;
-    background: #FD0 none repeat scroll 0% 0% !important;
+    background: #F45A0E none repeat scroll 0% 0% !important;
     color: #000;
     opacity: 0.8;
     min-height: 255px;
@@ -176,7 +176,7 @@ Content
     color: #404040;
 }
 .team-member .social-icons ul li a:hover {
-    color: #FD0;
+    color: #F45A0E;
 }
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
@@ -186,7 +186,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .focus-box .service-icon:hover {
-    border: 10px solid #FD0 !important;
+    border: 10px solid #F45A0E !important;
 }
 
 .focus-box .service-icon .pixeden {
@@ -194,7 +194,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .focus-box .red-border-bottom:before, .works .red-border-bottom:before, .listpost-content-wrap .entry-title a:after {
-    background: #FD0 !important;
+    background: #F45A0E !important;
 }
 
 .focus-box p {
@@ -313,7 +313,7 @@ Footer
     transform: scale(1.2);
 }
 .rb-latest-news-image:hover {
-    background: #FFDD00;
+    background: #F45A0E;
 }
 .latest-news {
     padding-bottom: 0px;
@@ -337,7 +337,7 @@ Footer
 }
 
 .rb-latest-news-image-holder:hover .rb-latest-news-content {
-    background-color: rgba(255, 221,0, 0.7);
+    background-color: rgba(150, 95,0, 0.7);
     display: block;
 }
 
@@ -376,26 +376,26 @@ Footer
 }
 
 .entry-title:before, .widget .widget-title:before {
-	background: #FD0;
+	background: #F45A0E;
 }
 .comment-form #submit, .comment-reply-link {
 	background: #313131;
-    border:1px solid #FFDD00 !important;
+    border:1px solid #F45A0E !important;
     color: #fff !important; 
 }
 .comment-form #submit:hover, .comment-reply-link:hover {
-	background: #FFDD00;
-    border:1px solid #FFDD00 !important;
+	background: #F45A0E;
+    border:1px solid #F45A0E !important;
     color: #000 !important; 
 }
 .rb-site-title {
-    color: #FD0;
+    color: #F45A0E;
     font-size: 18px;
     line-height: 18px;
     margin-top: 10px;
 }
 .rb-site-description {
-    color: #FD0;
+    color: #F45A0E;
     font-size: 15px;
     line-height: 15px;
 }
@@ -436,7 +436,7 @@ Responsive
         background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
     }
     .dropdownmenu {
-        background: url(images/menu-icon.png) center center no-repeat #FD0;
+        background: url(images/menu-icon.png) center center no-repeat #F45A0E;
     }
     .navbar a{
         color: #fff !important;
