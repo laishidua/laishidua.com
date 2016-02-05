@@ -53,6 +53,19 @@
 		zerif_bottom_head_trigger(); 
 	endif;	
 	?>
+<!-- MY FUNCTIONS LAISHIDUA -->
+<?php 
+if ($_SERVER['REQUEST_URI'] === "/"){
+?>
+<script>
+  var userLang = navigator.language || navigator.userLanguage; 
+  if (userLang.match("^es")) {
+    //window.location = "https://www.laishidua.com/es/";
+  }
+</script>
+<?php
+}
+?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -63,6 +76,7 @@
   ga('send', 'pageview');
 
 </script>
+<!-- CLOSE MY FUNCTIONS LAISHIDUA -->
 
 </head>
 
