@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_URI'] === "/"){
 <script>
   var userLang = navigator.language || navigator.userLanguage; 
   if (userLang.match("^es")) {
-    //window.location = "https://www.laishidua.com/es/";
+    window.location = "https://www.laishidua.com/es/";
   }
 </script>
 <?php
